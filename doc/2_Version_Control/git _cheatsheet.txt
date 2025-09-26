@@ -1,0 +1,77 @@
+==========================
+📌 Git Cheat Sheet (Basics)
+==========================
+
+🔹 git commit
+----------------
+# Create a commit with a message
+git commit -m "Your commit message"
+
+# Stage and commit tracked files in one step
+git commit -am "Update some files"
+
+
+🔹 git branch
+----------------
+# List all local branches
+git branch
+
+# Create a new branch
+git branch new-branch
+
+# Delete a branch
+git branch -d branch-name
+
+
+🔹 git checkout
+---------------------
+# Switch to another branch
+git checkout branch-name
+
+# Create and switch to a new branch
+git checkout -b new-branch
+
+# Discard local changes in a file
+git checkout -- filename
+
+
+🔹 git pull
+---------------
+# Fetch and merge changes from the remote branch
+git pull origin branch-name
+
+
+🔹 git push
+---------------
+# Push current branch to remote
+git push origin branch-name
+
+# Push all local branches
+git push --all origin
+
+
+🔹 git merge
+----------------
+# Merge a branch into the current branch
+git merge branch-name
+
+# (Resolve conflicts manually if prompted)
+
+
+🔹 git rebase
+-----------------
+# Rebase your feature branch onto main
+git checkout feature
+git rebase main
+
+# Interactive rebase (e.g., squash commits)
+git rebase -i HEAD~3
+
+
+🔹 git fetch
+----------------
+# Download latest changes from remote (no merge)
+git fetch origin
+
+# Fetch a specific branch
+git fetch origin branch-name
